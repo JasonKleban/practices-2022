@@ -19,6 +19,9 @@
       "moduleResolution": "NodeNext",
       "allowSyntheticDefaultImports": false,
       "skipLibCheck": true,
-      "forceConsistentCasingInFileNames": true
+      "forceConsistentCasingInFileNames": true,
+
+      "rootDir": "src",
+      "outDir": "dist",
     }
 }

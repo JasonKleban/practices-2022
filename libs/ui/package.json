@@ -1,0 +1,26 @@
+{
+  "name": "@practices/ui",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    ".": {
+      "default": {
+        "types": "./src/index.tsx",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.5",
+    "typescript": "beta"
+  },
+  "dependencies": {
+    "@practices/common": "workspace:*",
+    "react": "^18.0.0"
+  }
+}

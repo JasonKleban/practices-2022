@@ -1,0 +1,24 @@
+{
+    "name": "@practices/client",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "webpack",
+        "tsc": "tsc --build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "react": "^18.0.0",
+        "react-dom": "^18.0.0",
+        "@practices/ui": "workspace:*"
+    },
+    "devDependencies": {
+        "typescript": "beta",
+        "@types/react": "^18.0.5",
+        "@types/react-dom": "^18.0.1",
+        "webpack": "^5.72.0",
+        "webpack-cli": "^4.9.2",
+        "ts-loader": "^9.2.8"
+    }
+}

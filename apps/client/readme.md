@@ -1,0 +1,3 @@
+Client is a browser script, invoked by a basic html content with a script tag reference to it.  It must be versioned and cached.
+
+The content of the client application MIGHT be used in server-side-rendering.  The outer-most client script that knows how to bootstrap itself into a client browser environment is NOT useful on the server side and should be bundled targeting the browser only.  Any inner html content that could be SSR is, by definition, useful on the server and should come from an isomorphic library.

@@ -70,3 +70,8 @@ apps/*/dist
 apps/*/lib
 apps/*/bundles
 apps/*/*.tsbuildinfo
+libs/*/out
+libs/*/dist
+libs/*/lib
+libs/*/bundles
+libs/*/*.tsbuildinfo

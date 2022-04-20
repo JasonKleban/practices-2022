@@ -1,5 +1,5 @@
 import * as React from "react";
-import { AppProps } from "./exported-interfaces";
+import { AppProps } from "./exported-interfaces.jsx";
 
 export const App = ({ title } : AppProps) => {
     return (

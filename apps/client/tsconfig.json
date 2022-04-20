@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+      "incremental": true,
+      "target": "ESNext",
+      "module": "ESNext",
+      "jsx": "react",
+      "sourceMap": true,
+      "noEmitOnError": true,
+      "downlevelIteration": true,
+
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "noFallthroughCasesInSwitch": true,
+
+      "moduleResolution": "NodeNext",
+      "allowSyntheticDefaultImports": false,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+
+      "noEmit": true,
+
+      "rootDir": "src",
+
+      // The executible will need this reference so that breakpoints can be hit?  But expect to move this to the server project, not client
+    //   "baseUrl": "../..",
+    //   "paths": {
+    //       "@practices/*": [ "apps/*", "libs/*" ]
+    //   }
+    },
+    "references": [
+        { "path": "../../libs/ui" }
+    ]
+}

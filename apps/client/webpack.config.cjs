@@ -12,7 +12,6 @@ module.exports = {
     filename: "[name].js",
     chunkFilename: `[name].[chunkhash].js`,
     path: path.resolve(__dirname, "dist"),
-    libraryTarget: "commonjs",
     pathinfo: false,
   },
   module: {
@@ -20,23 +19,19 @@ module.exports = {
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        use: {
-          loader: "ts-loader",
-          options: {
-            experimentalFileCaching: true,
-            projectReferences: true,
-            onlyCompileBundledFiles: true,
+        loader: "ts-loader",
+        options: {
             transpileOnly: false,
             compilerOptions: {
-              noEmit: false,
+                noEmit: false,
+                //noEmitOnError: false,
             },
-          },
-        },
+        }
       },
     ],
   },
   resolve: {
-    extensions: [ ".ts", ".tsx", ".json", ".mjs", ".js" ], //, ".fonts", ".json", ".mjs", ".js", ".less", ".jpg", ".eot", ".woff"],
+    extensions: [".ts", ".tsx", ".mts", ".json", ".mjs", ".js"], //, ".fonts", ".json", ".mjs", ".js", ".less", ".jpg", ".eot", ".woff"],
     fallback: {
       fs: false,
     },
