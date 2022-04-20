@@ -1,0 +1,22 @@
+{
+  "name": "practices-2021",
+  "version": "1.0.0",
+  "description": "Minimalist pnpm typescript webpack monorepo",
+  "author": "Jason Kleban",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "pnpm build --filter \"practices-ui^...\"",
+    "tsc": "pnpm tsc --filter practices-ui",
+    "build": "pnpm build --filter practices-ui",
+    "purge": "rimraf apps/*/node_modules apps/*/dist apps/*/*.tsbuildinfo"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JasonKleban/practices-2021"
+  }
+}
