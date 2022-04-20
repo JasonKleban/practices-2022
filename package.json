@@ -7,9 +7,10 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "prepare": "pnpm build --filter \"@practices/client^...\"",
+    "build-deps": "pnpm build --filter \"@practices/client^...\"",
     "tsc": "pnpm tsc --filter practices-ui",
-    "build": "pnpm build --filter \"@practices/client\"",
+    "build": "pnpm build --filter \"@practices/server\"",
+    "start": "pnpm start --filter \"@practices/server\"",
     "purge": "rimraf apps/*/node_modules libs/*/node_modules apps/*/dist apps/*/dist/*.tsbuildinfo libs/*/dist libs/*/dist/*.tsbuildinfo",
     "upgrade-all": "pnpm upgrade -r --interactive --latest"
   },
