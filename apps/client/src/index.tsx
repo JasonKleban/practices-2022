@@ -1,8 +1,8 @@
 import * as React from "react";
-import * as ReactDOM from 'react-dom';
+import { hydrateRoot  } from "react-dom/client";
 import { App } from "@practices/ui";
 
-ReactDOM.render(
-    <App title={"Whatever"} />,
-    document.getElementById('root')
+hydrateRoot(
+    document.getElementById('root')!,
+    <App title={"Whatever"} />
   );
