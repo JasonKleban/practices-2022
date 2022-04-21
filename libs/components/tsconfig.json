@@ -21,6 +21,7 @@
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true,
 
+      "composite": true,
       "rootDir": "src",
       "outDir": "dist",
     }
