@@ -20,7 +20,11 @@ import * as ReactDOMServer from "react-dom/server";
   app.get("/", (_: Request, response: Response) => {
     const content = ReactDOMServer.renderToString(React.createElement(App, { title: "Whatever" }));
 
-    response.status(200).send(`<!doctype html><head><script src="./assets/main.js"></script></head><body><div id="root">${content}</div></body>`);
+    response.status(200).send(`<!doctype html><body><div id="root">${content}</div><script src="./assets/main.js"></script></body>`);
+  });
+
+  app.all("/favicon.ico", (_: Request, response: Response) => {
+    response.status(204).end();
   });
 
   app.listen(8080, () => {

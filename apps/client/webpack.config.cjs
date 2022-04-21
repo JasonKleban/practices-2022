@@ -21,12 +21,16 @@ module.exports = {
         exclude: /node_modules/,
         loader: "ts-loader",
         options: {
-            transpileOnly: false,
-            compilerOptions: {
-                noEmit: false,
-                //noEmitOnError: false,
-            },
-        }
+          transpileOnly: false,
+          compilerOptions: {
+            noEmit: false
+          },
+        },
+      },
+      {
+        test: /\.m?jss?$/,
+        enforce: "pre",
+        use: ["source-map-loader"],
       },
     ],
   },

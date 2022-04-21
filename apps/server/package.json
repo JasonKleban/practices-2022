@@ -5,7 +5,7 @@
     "type": "module",
     "scripts": {
         "build": "tsc --build",
-        "start": "node ./dist/index.cjs",
+        "start": "node --inspect=5859 ./dist/index.cjs",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "dependencies": {
@@ -20,6 +20,7 @@
         "@types/express": "4.17.3",
         "typescript": "beta",
         "@types/react": "^18.0.5",
-        "@types/react-dom": "^18.0.1"
+        "@types/react-dom": "^18.0.1",
+        "@types/node": "^17.0.25"
     }
 }

@@ -9,9 +9,9 @@
     "preinstall": "npx only-allow pnpm",
     "build-deps": "pnpm build --filter \"@practices/server^...\"",
     "tsc": "pnpm tsc --filter practices-ui",
-    "build": "pnpm build --filter \"@practices/server\"",
+    "build": "pnpm build -r",
     "start": "pnpm start --filter \"@practices/server\"",
-    "purge": "rimraf apps/*/node_modules libs/*/node_modules apps/*/dist apps/*/dist/*.tsbuildinfo libs/*/dist libs/*/dist/*.tsbuildinfo",
+    "purge": "rimraf apps/*/node_modules libs/*/node_modules apps/*/dist apps/*/*.tsbuildinfo libs/*/dist libs/*/*.tsbuildinfo",
     "upgrade-all": "pnpm upgrade -r --interactive --latest"
   },
   "devDependencies": {
